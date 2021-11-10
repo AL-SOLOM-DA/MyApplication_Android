@@ -34,7 +34,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/button_start"
-            android:textColor="@color/black"
+            android:textColor="@color/pink_general"
             android:textSize="48sp" />
     </LinearLayout>
 
