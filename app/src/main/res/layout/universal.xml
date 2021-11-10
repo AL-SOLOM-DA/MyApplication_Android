@@ -220,20 +220,53 @@
                     android:layout_width="match_parent"
                     android:layout_height="320dp"
                     android:layout_marginRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/imgtest" />
+                    android:src="@drawable/imgtest" />
 
                 <ImageView
                     android:id="@+id/img_right"
                     android:layout_width="match_parent"
                     android:layout_height="320dp"
                     android:layout_marginRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/imgtest" />
+                    android:src="@drawable/imgtest" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_left" />
+                <TextView
+                    android:id="@+id/text_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_right" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
