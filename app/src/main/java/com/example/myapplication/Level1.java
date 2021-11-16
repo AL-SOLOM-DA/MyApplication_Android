@@ -211,7 +211,7 @@ public class Level1 extends AppCompatActivity {
                     } else {
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
-                       // img_left.startAnimation(a);
+                        img_left.startAnimation(a);
                         text_left.setText(array.texts1[numLeft]);
 
                         numRight = random.nextInt(10);
@@ -220,7 +220,7 @@ public class Level1 extends AppCompatActivity {
                             numRight = random.nextInt();
                         }
                         img_right.setImageResource(array.images1[numRight]);
-                       // img_right.startAnimation(a);
+                        img_right.startAnimation(a);
                         text_right.setText(array.texts1[numRight]);
 
                         img_right.setEnabled(true);//Unblocked right image
@@ -291,7 +291,7 @@ public class Level1 extends AppCompatActivity {
                             numRight = random.nextInt();
                         }
                         img_right.setImageResource(array.images1[numRight]);
-                     //   img_right.startAnimation(a);
+                        img_right.startAnimation(a);
                         text_right.setText(array.texts1[numRight]);
 
                         img_left.setEnabled(true);//Unblocked left image

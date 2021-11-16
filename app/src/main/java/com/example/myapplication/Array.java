@@ -3,16 +3,16 @@ package com.example.myapplication;
 public class Array {
     //first level array start
     final int[] images1 = {
-        R.drawable.ic__0,
-        R.drawable.ic__1,
-        R.drawable.ic__2,
-        R.drawable.ic__3,
-        R.drawable.ic__4,
-        R.drawable.ic__5,
-        R.drawable.ic__6,
-        R.drawable.ic__7,
-        R.drawable.ic__8,
-        R.drawable.ic__9
+        R.drawable.one_zero,
+        R.drawable.one_1,
+        R.drawable.one_2,
+        R.drawable.one_3,
+        R.drawable.one_4,
+        R.drawable.one_5,
+        R.drawable.one_6,
+        R.drawable.one_7,
+        R.drawable.one_8,
+        R.drawable.one_9
     };
 
     final int[] texts1 = {
