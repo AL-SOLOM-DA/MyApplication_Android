@@ -218,26 +218,26 @@
                 <ImageView
                     android:id="@+id/img_left"
                     android:layout_width="match_parent"
-                    android:layout_height="320dp"
+                    android:layout_height="350dp"
                     android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_img_universal"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:scaleType="centerCrop"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_img_universal"
-                    android:src="@drawable/back_left_right" />
+                    android:src="@drawable/imgtest" />
 
                 <ImageView
                     android:id="@+id/img_right"
                     android:layout_width="match_parent"
-                    android:layout_height="320dp"
+                    android:layout_height="350dp"
                     android:layout_marginRight="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/back_left_right" />
+                    android:src="@drawable/imgtest" />
             </LinearLayout>
 
             <LinearLayout
@@ -251,22 +251,23 @@
                     android:id="@+id/text_left"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/text_left" />
+                    android:text="@string/text_left"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
                 <TextView
                     android:id="@+id/text_right"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/text_right" />
+                    android:text="@string/text_right"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

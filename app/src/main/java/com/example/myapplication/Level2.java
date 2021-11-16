@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -17,12 +15,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Random;
 
-public class Level1 extends AppCompatActivity {
+public class Level2 extends AppCompatActivity {
 
     Dialog dialog;
-    Dialog dialogEnd;
     public int numLeft;
     public int numRight;
     Array array = new Array();
@@ -48,7 +47,7 @@ public class Level1 extends AppCompatActivity {
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        //Started dialog window
+
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.previewdialog);
@@ -60,7 +59,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    Intent intent = new Intent(Level2.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -80,53 +79,12 @@ public class Level1 extends AppCompatActivity {
 
         dialog.show();
 
-        //_____________________________________________
-        //Ended dialog window
-        dialogEnd = new Dialog(this);
-        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialogEnd.setContentView(R.layout.dialogend);
-        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialogEnd.setCancelable(false);
-
-        TextView button_close2 = (TextView) dialogEnd.findViewById(R.id.button_close);
-        button_close2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e){
-
-                }
-                dialogEnd.dismiss();
-            }
-        });
-
-        Button button_continue2 = (Button) dialogEnd.findViewById(R.id.button_continue);
-        button_continue2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(Level1.this, Level2.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e){
-                    //
-                }
-
-                dialogEnd.dismiss();
-            }
-        });
-
-        //_____________________________________________
-
         Button levelBack = findViewById(R.id.level_back);
         levelBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    Intent intent = new Intent(Level2.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -145,7 +103,7 @@ public class Level1 extends AppCompatActivity {
         };
 
         //Animation
-        final Animation a = AnimationUtils.loadAnimation(Level1.this, R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level2.this, R.anim.alpha);
 
         numLeft = random.nextInt(10);
         img_left.setImageResource(array.images1[numLeft]);
@@ -207,11 +165,10 @@ public class Level1 extends AppCompatActivity {
                     }
                     if(count==20){
                         //Exit level
-                        dialogEnd.show();
                     } else {
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
-                       // img_left.startAnimation(a);
+                        img_left.startAnimation(a);
                         text_left.setText(array.texts1[numLeft]);
 
                         numRight = random.nextInt(10);
@@ -220,7 +177,7 @@ public class Level1 extends AppCompatActivity {
                             numRight = random.nextInt();
                         }
                         img_right.setImageResource(array.images1[numRight]);
-                       // img_right.startAnimation(a);
+                        img_right.startAnimation(a);
                         text_right.setText(array.texts1[numRight]);
 
                         img_right.setEnabled(true);//Unblocked right image
@@ -278,7 +235,6 @@ public class Level1 extends AppCompatActivity {
                     }
                     if(count==20){
                         //Exit level
-                        dialogEnd.show();
                     } else {
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
@@ -291,7 +247,7 @@ public class Level1 extends AppCompatActivity {
                             numRight = random.nextInt();
                         }
                         img_right.setImageResource(array.images1[numRight]);
-                     //   img_right.startAnimation(a);
+                        img_right.startAnimation(a);
                         text_right.setText(array.texts1[numRight]);
 
                         img_left.setEnabled(true);//Unblocked left image
@@ -308,7 +264,7 @@ public class Level1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         try {
-            Intent intent = new Intent(Level1.this, GameLevels.class);
+            Intent intent = new Intent(Level2.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e){
