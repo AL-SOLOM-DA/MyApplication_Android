@@ -8,4 +8,7 @@
     <string name="level2">Level 2</string>
     <string name="text_left">Text Left</string>
     <string name="text_right">Text Right</string>
+    <string name="text_question">Text question</string>
+    <string name="text_question_level2">Где мишка?</string>
+    <string name="text_question_level1">Какое число больше?</string>
 </resources>

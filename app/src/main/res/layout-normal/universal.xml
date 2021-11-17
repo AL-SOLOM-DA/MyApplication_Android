@@ -17,8 +17,8 @@
         android:id="@+id/container1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
@@ -238,7 +238,7 @@
                 <ImageView
                     android:id="@+id/img_left"
                     android:layout_width="wrap_content"
-                    android:layout_height="350dp"
+                    android:layout_height="280dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="50"
                     android:background="@drawable/style_img_universal"
@@ -250,7 +250,7 @@
                 <ImageView
                     android:id="@+id/img_right"
                     android:layout_width="wrap_content"
-                    android:layout_height="350dp"
+                    android:layout_height="280dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="50"
                     android:background="@drawable/style_img_universal"

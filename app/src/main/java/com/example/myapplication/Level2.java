@@ -36,6 +36,9 @@ public class Level2 extends AppCompatActivity {
         TextView text_levels = findViewById(R.id.text_levels);
         text_levels.setText(R.string.level2);
 
+        TextView text_question = findViewById(R.id.question);
+        text_question.setText(R.string.text_question_level2);
+
         final ImageView img_left = findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
 
@@ -108,19 +111,19 @@ public class Level2 extends AppCompatActivity {
         int side = random.nextInt(2);
         if(side == 0) {
             numLeft = random.nextInt(7);
-            img_left.setImageResource(array.images1[numLeft]);
+            img_left.setImageResource(array.images2[numLeft]);
             text_left.setText("");
 
             numRight = random.nextInt(6) + 7;
-            img_right.setImageResource(array.images1[numRight]);
+            img_right.setImageResource(array.images2[numRight]);
             text_right.setText("");
         } else{
             numLeft = random.nextInt(5)+7;
-            img_left.setImageResource(array.images1[numLeft]);
+            img_left.setImageResource(array.images2[numLeft]);
             text_left.setText("");
 
             numRight = random.nextInt(7);
-            img_right.setImageResource(array.images1[numRight]);
+            img_right.setImageResource(array.images2[numRight]);
             text_right.setText("");
         }
 
@@ -177,22 +180,22 @@ public class Level2 extends AppCompatActivity {
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = random.nextInt(7);
-                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.setImageResource(array.images2[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
 
                             numRight = random.nextInt(6) + 7;
-                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.setImageResource(array.images2[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
                         } else{
                             numLeft = random.nextInt(5)+7;
-                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.setImageResource(array.images2[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
 
                             numRight = random.nextInt(7);
-                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.setImageResource(array.images2[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
                         }
@@ -257,22 +260,22 @@ public class Level2 extends AppCompatActivity {
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = random.nextInt(7);
-                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.setImageResource(array.images2[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
 
                             numRight = random.nextInt(6) + 7;
-                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.setImageResource(array.images2[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
                         } else{
                             numLeft = random.nextInt(5)+7;
-                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.setImageResource(array.images2[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
 
                             numRight = random.nextInt(7);
-                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.setImageResource(array.images2[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
                         }

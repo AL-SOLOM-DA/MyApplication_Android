@@ -17,7 +17,7 @@
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamelevels);
 
-        Button buttonBack = (Button) findViewById(R.id.level_back);
+        Button buttonBack = (Button) findViewById(R.id.button_back);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@
 
             }
         });
-
+        //Level 1 button
         TextView textView1 = (TextView) findViewById(R.id.textView1);
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +40,21 @@
                 Intent intent = new Intent(GameLevels.this, Level1.class);
                 startActivity(intent);
                 finish();
+                } catch (Exception e){
+
+                }
+            }
+        });
+
+        //Level 2 button
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try{
+                    Intent intent = new Intent(GameLevels.this, Level2.class);
+                    startActivity(intent);
+                    finish();
                 } catch (Exception e){
 
                 }
