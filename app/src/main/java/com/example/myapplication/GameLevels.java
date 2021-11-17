@@ -36,9 +36,13 @@
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try{
                 Intent intent = new Intent(GameLevels.this, Level1.class);
                 startActivity(intent);
                 finish();
+                } catch (Exception e){
+
+                }
             }
         });
 

@@ -64,7 +64,7 @@ public class Level1 extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
-
+                    System.out.println(e);
                 }
                 dialog.dismiss();
             }
@@ -97,7 +97,7 @@ public class Level1 extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
-
+                    System.out.println(e);
                 }
                 dialogEnd.dismiss();
             }
@@ -154,7 +154,7 @@ public class Level1 extends AppCompatActivity {
         numRight = random.nextInt(10);
 
         while (numRight==numLeft){
-            numRight = random.nextInt();
+            numRight = random.nextInt(10);
         }
         img_right.setImageResource(array.images1[numRight]);
         text_right.setText(array.texts1[numRight]);
@@ -217,7 +217,7 @@ public class Level1 extends AppCompatActivity {
                         numRight = random.nextInt(10);
 
                         while (numRight==numLeft){
-                            numRight = random.nextInt();
+                            numRight = random.nextInt(10);
                         }
                         img_right.setImageResource(array.images1[numRight]);
                         img_right.startAnimation(a);
@@ -288,7 +288,7 @@ public class Level1 extends AppCompatActivity {
                         numRight = random.nextInt(10);
 
                         while (numRight==numLeft){
-                            numRight = random.nextInt();
+                            numRight = random.nextInt(10);
                         }
                         img_right.setImageResource(array.images1[numRight]);
                         img_right.startAnimation(a);

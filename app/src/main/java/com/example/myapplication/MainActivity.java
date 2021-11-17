@@ -28,7 +28,7 @@ import java.time.Instant;
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
-                    e.printStackTrace();
+
                 }
             }
         });
