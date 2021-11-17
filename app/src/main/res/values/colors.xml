@@ -16,4 +16,7 @@
     <color name="pink_general35">#59F065D1</color>
     <color name="cyan">#48d1ff</color>
     <color name="green">#9019ff19</color>
+    <color name="newstartbtncolor">#709f9d</color>
+    <color name="newstartbtncolor90">#90709f9d</color>
+    <color name="newstartbtntxt">#008DB9</color>
 </resources>

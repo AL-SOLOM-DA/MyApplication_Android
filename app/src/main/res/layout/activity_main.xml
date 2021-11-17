@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_main" />
+        android:src="@drawable/new_start_back" />
 
     <LinearLayout
         android:id="@+id/startLayout"
@@ -34,7 +34,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/button_start"
-            android:textColor="@color/pink_general"
+            android:textColor="@color/newstartbtntxt"
             android:textSize="48sp" />
     </LinearLayout>
 

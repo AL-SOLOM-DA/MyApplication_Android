@@ -17,7 +17,7 @@
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamelevels);
 
-        Button buttonBack = (Button) findViewById(R.id.button_back);
+        Button buttonBack = (Button) findViewById(R.id.level_back);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
