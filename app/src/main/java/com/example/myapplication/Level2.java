@@ -34,7 +34,7 @@ public class Level2 extends AppCompatActivity {
         setContentView(R.layout.universal);
 
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1);
+        text_levels.setText(R.string.level2);
 
         final ImageView img_left = findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
@@ -105,17 +105,24 @@ public class Level2 extends AppCompatActivity {
         //Animation
         final Animation a = AnimationUtils.loadAnimation(Level2.this, R.anim.alpha);
 
-        numLeft = random.nextInt(10);
-        img_left.setImageResource(array.images1[numLeft]);
-        text_left.setText(array.texts1[numLeft]);
+        int side = random.nextInt(2);
+        if(side == 0) {
+            numLeft = random.nextInt(7);
+            img_left.setImageResource(array.images1[numLeft]);
+            text_left.setText("");
 
-        numRight = random.nextInt(10);
+            numRight = random.nextInt(6) + 7;
+            img_right.setImageResource(array.images1[numRight]);
+            text_right.setText("");
+        } else{
+            numLeft = random.nextInt(5)+7;
+            img_left.setImageResource(array.images1[numLeft]);
+            text_left.setText("");
 
-        while (numRight==numLeft){
-            numRight = random.nextInt(10);
+            numRight = random.nextInt(7);
+            img_right.setImageResource(array.images1[numRight]);
+            text_right.setText("");
         }
-        img_right.setImageResource(array.images1[numRight]);
-        text_right.setText(array.texts1[numRight]);
 
         //Handling the touch on left image
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -125,14 +132,14 @@ public class Level2 extends AppCompatActivity {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
                     //Touch img
                     img_right.setEnabled(false);//Blocked right img
-                    if(numLeft>numRight){
+                    if(numLeft<numRight){
                         img_left.setImageResource(R.drawable.green_true);
                     }else {
                         img_left.setImageResource(R.drawable.red_false);
                     }
                 } else if (event.getAction() == MotionEvent.ACTION_UP){
                     //Untouch img
-                    if(numLeft>numRight){
+                    if(numLeft<numRight){
                         //if left image > right image
                         if (count<20) {
                             count++;
@@ -165,20 +172,30 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count==20){
                         //Exit level
+                        dialog.show();
                     } else {
-                        numLeft = random.nextInt(10);
-                        img_left.setImageResource(array.images1[numLeft]);
-                        img_left.startAnimation(a);
-                        text_left.setText(array.texts1[numLeft]);
+                        int side = random.nextInt(2);
+                        if(side == 0) {
+                            numLeft = random.nextInt(7);
+                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
 
-                        numRight = random.nextInt(10);
+                            numRight = random.nextInt(6) + 7;
+                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
+                        } else{
+                            numLeft = random.nextInt(5)+7;
+                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
 
-                        while (numRight==numLeft){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(7);
+                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
                         }
-                        img_right.setImageResource(array.images1[numRight]);
-                        img_right.startAnimation(a);
-                        text_right.setText(array.texts1[numRight]);
 
                         img_right.setEnabled(true);//Unblocked right image
                     }
@@ -195,14 +212,14 @@ public class Level2 extends AppCompatActivity {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
                     //Touch img
                     img_left.setEnabled(false);//Blocked left img
-                    if(numLeft<numRight){
+                    if(numLeft>numRight){
                         img_right.setImageResource(R.drawable.green_true);
                     }else {
                         img_right.setImageResource(R.drawable.red_false);
                     }
                 } else if (event.getAction() == MotionEvent.ACTION_UP){
                     //Untouch img
-                    if(numLeft<numRight){
+                    if(numLeft>numRight){
                         //if left image < right image
                         if (count<20) {
                             count++;
@@ -235,20 +252,30 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count==20){
                         //Exit level
+                        dialog.show();
                     } else {
-                        numLeft = random.nextInt(10);
-                        img_left.setImageResource(array.images1[numLeft]);
-                        img_left.startAnimation(a);
-                        text_left.setText(array.texts1[numLeft]);
+                        int side = random.nextInt(2);
+                        if(side == 0) {
+                            numLeft = random.nextInt(7);
+                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
 
-                        numRight = random.nextInt(10);
+                            numRight = random.nextInt(6) + 7;
+                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
+                        } else{
+                            numLeft = random.nextInt(5)+7;
+                            img_left.setImageResource(array.images1[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
 
-                        while (numRight==numLeft){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(7);
+                            img_right.setImageResource(array.images1[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
                         }
-                        img_right.setImageResource(array.images1[numRight]);
-                        img_right.startAnimation(a);
-                        text_right.setText(array.texts1[numRight]);
 
                         img_left.setEnabled(true);//Unblocked left image
                     }

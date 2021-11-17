@@ -5,6 +5,7 @@
     <string name="button_continue">CONTINUE</string>
     <string name="level">Level: </string>
     <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
     <string name="text_left">Text Left</string>
     <string name="text_right">Text Right</string>
 </resources>
