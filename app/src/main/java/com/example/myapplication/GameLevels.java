@@ -76,6 +76,21 @@
             }
         });
 
+        //Level 4 button
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try{
+                    Intent intent = new Intent(GameLevels.this, Level4.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e){
+
+                }
+            }
+        });
+
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

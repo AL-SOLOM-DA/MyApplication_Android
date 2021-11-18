@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level3 extends AppCompatActivity {
+public class Level4 extends AppCompatActivity {
     Dialog dialog;
     Dialog dialogEnd;
     public int numLeft;
@@ -35,10 +35,10 @@ public class Level3 extends AppCompatActivity {
         setContentView(R.layout.universal);
 
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level3);
+        text_levels.setText(R.string.level4);
 
         TextView text_question = findViewById(R.id.question);
-        text_question.setText(R.string.text_question_level2);
+        text_question.setText("");
 
         final ImageView img_left = findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
@@ -59,17 +59,17 @@ public class Level3 extends AppCompatActivity {
         dialog.setCancelable(false);
 
         ImageView previewimg = (ImageView) dialog.findViewById(R.id.preview_img);
-        previewimg.setImageResource(R.drawable.osel);
+        previewimg.setImageResource(R.drawable.yellow_ball);
 
         TextView previewtxt = (TextView) dialog.findViewById(R.id.text_description);
-        previewtxt.setText(R.string.levelthree);
+        previewtxt.setText(R.string.levelfour);
 
         TextView button_close = (TextView) dialog.findViewById(R.id.button_close);
         button_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level3.this, GameLevels.class);
+                    Intent intent = new Intent(Level4.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -97,14 +97,14 @@ public class Level3 extends AppCompatActivity {
         dialogEnd.setCancelable(false);
 
         TextView endtxt = (TextView) dialogEnd.findViewById(R.id.text_description_end);
-        endtxt.setText(R.string.levelthreeend);
+        endtxt.setText(R.string.levelfourend);
 
         TextView button_close2 = (TextView) dialogEnd.findViewById(R.id.button_close);
         button_close2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level3.this, GameLevels.class);
+                    Intent intent = new Intent(Level4.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -119,7 +119,7 @@ public class Level3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level3.this, Level4.class);
+                    Intent intent = new Intent(Level4.this, Level4.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -137,7 +137,7 @@ public class Level3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level3.this, GameLevels.class);
+                    Intent intent = new Intent(Level4.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e){
@@ -156,43 +156,36 @@ public class Level3 extends AppCompatActivity {
         };
 
         //Animation
-        final Animation a = AnimationUtils.loadAnimation(Level3.this, R.anim.alpha);
-        questtxt = random.nextInt(14);
+        final Animation a = AnimationUtils.loadAnimation(Level4.this, R.anim.alpha);
+
+        questtxt = random.nextInt(10);
         int side = random.nextInt(2);
         if(side == 0) {
             numLeft = questtxt;
-            text_question.setText(array.textquest3[numLeft]);
-            img_left.setImageResource(array.images2[numLeft]);
+            text_question.setText(array.textquest4[numLeft]);
+            img_left.setImageResource(array.images4[numLeft]);
             text_left.setText("");
-            if(numLeft<7){
-                numRight = random.nextInt(6) + 7;
-                img_right.setImageResource(array.images2[numRight]);
-                text_right.setText("");
-            } else {
-                numRight = random.nextInt(14);
-                while (numLeft==numRight){
-                    numRight = random.nextInt(14);
-                }
-                img_right.setImageResource(array.images2[numRight]);
-                text_right.setText("");
+
+            numRight = random.nextInt(10);
+            while (numLeft==numRight){
+                numRight = random.nextInt(10);
             }
+            img_right.setImageResource(array.images4[numRight]);
+            text_right.setText("");
+
         } else{
             numRight = questtxt;
-            text_question.setText(array.textquest3[numRight]);
-            img_right.setImageResource(array.images2[numRight]);
+            text_question.setText(array.textquest4[numRight]);
+            img_right.setImageResource(array.images4[numRight]);
             text_right.setText("");
-            if(numRight<7){
-                numLeft = random.nextInt(6) + 7;
-                img_left.setImageResource(array.images2[numLeft]);
-                text_left.setText("");
-            } else {
-                numLeft = random.nextInt(14);
-                while (numLeft==numRight){
-                    numLeft = random.nextInt(14);
-                }
-                img_left.setImageResource(array.images2[numLeft]);
-                text_left.setText("");
+
+            numLeft = random.nextInt(10);
+            while (numLeft==numRight){
+                numLeft = random.nextInt(10);
             }
+            img_left.setImageResource(array.images4[numLeft]);
+            text_left.setText("");
+
         }
 
         //Handling the touch on left image
@@ -245,46 +238,38 @@ public class Level3 extends AppCompatActivity {
                         //Exit level
                         dialogEnd.show();
                     } else {
-                        questtxt = random.nextInt(14);
+                        questtxt = random.nextInt(10);
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = questtxt;
-                            text_question.setText(array.textquest3[numLeft]);
-                            img_left.setImageResource(array.images2[numLeft]);
+                            text_question.setText(array.textquest4[numLeft]);
+                            img_left.setImageResource(array.images4[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
-                            if(numLeft<7){
-                                numRight = random.nextInt(6) + 7;
-                                img_right.setImageResource(array.images2[numRight]);
-                                text_right.setText("");
-                            } else {
-                                numRight = random.nextInt(14);
-                                while (numLeft==numRight){
-                                    numRight = random.nextInt(14);
-                                }
-                                img_right.setImageResource(array.images2[numRight]);
-                                img_right.startAnimation(a);
-                                text_right.setText("");
+
+                            numRight = random.nextInt(10);
+                            while (numLeft==numRight){
+                                numRight = random.nextInt(10);
                             }
-                        } else{
-                            numRight = questtxt;
-                            text_question.setText(array.textquest3[numRight]);
-                            img_right.setImageResource(array.images2[numRight]);
+                            img_right.setImageResource(array.images4[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
-                            if(numRight<7){
-                                numLeft = random.nextInt(6) + 7;
-                                img_left.setImageResource(array.images2[numLeft]);
-                                text_left.setText("");
-                            } else {
-                                numLeft = random.nextInt(14);
-                                while (numLeft==numRight){
-                                    numLeft = random.nextInt(14);
-                                }
-                                img_left.setImageResource(array.images2[numLeft]);
-                                img_left.startAnimation(a);
-                                text_left.setText("");
+
+                        } else{
+                            numRight = questtxt;
+                            text_question.setText(array.textquest4[numRight]);
+                            img_right.setImageResource(array.images4[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
+
+                            numLeft = random.nextInt(10);
+                            while (numLeft==numRight){
+                                numLeft = random.nextInt(10);
                             }
+                            img_left.setImageResource(array.images4[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
+
                         }
 
                         img_right.setEnabled(true);//Unblocked right image
@@ -344,46 +329,38 @@ public class Level3 extends AppCompatActivity {
                         //Exit level
                         dialogEnd.show();
                     } else {
-                        questtxt = random.nextInt(14);
+                        questtxt = random.nextInt(10);
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = questtxt;
-                            text_question.setText(array.textquest3[numLeft]);
-                            img_left.setImageResource(array.images2[numLeft]);
+                            text_question.setText(array.textquest4[numLeft]);
+                            img_left.setImageResource(array.images4[numLeft]);
                             img_left.startAnimation(a);
                             text_left.setText("");
-                            if(numLeft<7){
-                                numRight = random.nextInt(6) + 7;
-                                img_right.setImageResource(array.images2[numRight]);
-                                text_right.setText("");
-                            } else {
-                                numRight = random.nextInt(14);
-                                while (numLeft==numRight){
-                                    numRight = random.nextInt(14);
-                                }
-                                img_right.setImageResource(array.images2[numRight]);
-                                img_right.startAnimation(a);
-                                text_right.setText("");
+
+                            numRight = random.nextInt(10);
+                            while (numLeft==numRight){
+                                numRight = random.nextInt(10);
                             }
-                        } else{
-                            numRight = questtxt;
-                            text_question.setText(array.textquest3[numRight]);
-                            img_right.setImageResource(array.images2[numRight]);
+                            img_right.setImageResource(array.images4[numRight]);
                             img_right.startAnimation(a);
                             text_right.setText("");
-                            if(numRight<7){
-                                numLeft = random.nextInt(6) + 7;
-                                img_left.setImageResource(array.images2[numLeft]);
-                                text_left.setText("");
-                            } else {
-                                numLeft = random.nextInt(14);
-                                while (numLeft==numRight){
-                                    numLeft = random.nextInt(14);
-                                }
-                                img_left.setImageResource(array.images2[numLeft]);
-                                img_left.startAnimation(a);
-                                text_left.setText("");
+
+                        } else{
+                            numRight = questtxt;
+                            text_question.setText(array.textquest4[numRight]);
+                            img_right.setImageResource(array.images4[numRight]);
+                            img_right.startAnimation(a);
+                            text_right.setText("");
+
+                            numLeft = random.nextInt(10);
+                            while (numLeft==numRight){
+                                numLeft = random.nextInt(10);
                             }
+                            img_left.setImageResource(array.images4[numLeft]);
+                            img_left.startAnimation(a);
+                            text_left.setText("");
+
                         }
 
                         img_left.setEnabled(true);//Unblocked left image
@@ -400,7 +377,7 @@ public class Level3 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         try {
-            Intent intent = new Intent(Level3.this, GameLevels.class);
+            Intent intent = new Intent(Level4.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e){

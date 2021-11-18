@@ -44,7 +44,7 @@
         <Button
             android:id="@+id/button_continue"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:layout_weight="10"
             android:background="@drawable/button_start_black95_press_white"
@@ -52,7 +52,7 @@
             android:paddingRight="15dp"
             android:text="@string/button_continue"
             android:textColor="@color/pink_general65"
-            android:textSize="24dp"
+            android:textSize="32dp"
             android:textStyle="bold"
 
             />

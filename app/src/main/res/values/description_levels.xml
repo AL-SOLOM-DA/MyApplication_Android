@@ -4,5 +4,9 @@
     <string name="leveloneend">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что число 7 является самым счастливым числоь. Существует 7 дней недели, 7 континентов, 7 цветов радуги и т.д. Так же число 7 чаще всего люди выбирают своим счастливым числом."</string>
     <string name="leveltwo">Найди на картинке мишку!</string>
+    <string name="levelthree">Угадай где животное, которое мы загадали!</string>
+    <string name="levelfour">Найди где мячик нужного цвета!</string>
     <string name="leveltwoend">Все любят мишек!</string>
+    <string name="levelthreeend">Ты супер-пупер умничка!</string>
+    <string name="levelfourend">Ты знаешь все цвета на свете!</string>
 </resources>

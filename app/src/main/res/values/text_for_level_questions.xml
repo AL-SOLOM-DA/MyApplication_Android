@@ -11,7 +11,18 @@
     <string name="level3textquestion8">Найди где Лиса?</string>
     <string name="level3textquestion9">Найди где Собака?</string>
     <string name="level3textquestion10">Найди где Собака?</string>
-    <string name="level3textquestion11">Найди где Волк?</string>
+    <string name="level3textquestion11">Найди где Обезьяна?</string>
     <string name="level3textquestion12">Найди где Осел?</string>
     <string name="level3textquestion13">Найди где Заяц?</string>
+
+    <string name="level4textquestion0">Найди где Чёрный мяч?</string>
+    <string name="level4textquestion1">Найди где Синий мяч?</string>
+    <string name="level4textquestion2">Найди где Голубой мяч?</string>
+    <string name="level4textquestion3">Найди где Зеленый мяч?</string>
+    <string name="level4textquestion4">Найди где Серый мяч?</string>
+    <string name="level4textquestion5">Найди где Оранжевый мяч?</string>
+    <string name="level4textquestion6">Найди где Розовый мяч?</string>
+    <string name="level4textquestion7">Найди где Фиолетовый мяч?</string>
+    <string name="level4textquestion8">Найди где Красный мяч?</string>
+    <string name="level4textquestion9">Найди где Жёлтый мяч?</string>
 </resources>

@@ -114,5 +114,37 @@ public class Array {
             R.string.level3textquestion12,
             R.string.level3textquestion13,
     };
-    //second level array end
+    //third level array end
+    //fourth level array start
+    final int[] images4 = {
+            R.drawable.black_ball,
+            R.drawable.blue_ball,
+            R.drawable.cyan_ball,
+            R.drawable.green_ball,
+            R.drawable.grey_ball,
+            R.drawable.orange_ball,
+            R.drawable.pink_ball,
+            R.drawable.pirple_ball,
+            R.drawable.red_ball,
+            R.drawable.yellow_ball,
+
+    };
+    final int[] texts4 = {
+
+    };
+
+    final int[]textquest4 = {
+            R.string.level4textquestion0,
+            R.string.level4textquestion1,
+            R.string.level4textquestion2,
+            R.string.level4textquestion3,
+            R.string.level4textquestion4,
+            R.string.level4textquestion5,
+            R.string.level4textquestion6,
+            R.string.level4textquestion7,
+            R.string.level4textquestion8,
+            R.string.level4textquestion9,
+    };
+    //fourth level array end
+
 }

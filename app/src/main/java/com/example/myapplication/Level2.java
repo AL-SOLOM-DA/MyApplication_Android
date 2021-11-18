@@ -96,6 +96,9 @@ public class Level2 extends AppCompatActivity {
         dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialogEnd.setCancelable(false);
 
+        TextView endtxt = (TextView) dialogEnd.findViewById(R.id.text_description_end);
+        endtxt.setText(R.string.leveltwoend);
+
         TextView button_close2 = (TextView) dialogEnd.findViewById(R.id.button_close);
         button_close2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -334,7 +337,7 @@ public class Level2 extends AppCompatActivity {
                 return true;
             }
         });
-    }
+}
 
 
 

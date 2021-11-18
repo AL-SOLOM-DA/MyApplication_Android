@@ -40,4 +40,15 @@
     <string name="level3text11">Волк</string>
     <string name="level3text12">Осел</string>
     <string name="level3text13">Заяц</string>
+
+    <string name="level4text0">Чёрный мяч</string>
+    <string name="level4text1">Синий мяч</string>
+    <string name="level4text2">Голубой мяч</string>
+    <string name="level4text3">Зеленый мяч</string>
+    <string name="level4text4">Серый мяч</string>
+    <string name="level4text5">Оранжевый мяч</string>
+    <string name="level4text6">Розовый мяч</string>
+    <string name="level4text7">Фиолетовый мяч</string>
+    <string name="level4text8">Красный мяч</string>
+    <string name="level4text9">Жёлтый мяч</string>
 </resources>

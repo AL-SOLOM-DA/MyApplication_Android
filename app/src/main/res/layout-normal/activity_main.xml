@@ -11,11 +11,12 @@
         android:layout_height="match_parent"
         android:background="@drawable/new_back"
         android:orientation="vertical"></LinearLayout>
+
     <ImageView
         android:id="@+id/background_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/new_start_back" />
 
 
