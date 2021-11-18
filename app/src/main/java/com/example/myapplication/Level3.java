@@ -26,6 +26,7 @@ public class Level3 extends AppCompatActivity {
     public int numRight;
     Array array = new Array();
     Random random = new Random();
+    public int questtxt=0;
     public int count = 0; // Count of right answers
 
     @Override
@@ -153,7 +154,7 @@ public class Level3 extends AppCompatActivity {
 
         //Animation
         final Animation a = AnimationUtils.loadAnimation(Level3.this, R.anim.alpha);
-        int questtxt = random.nextInt(14);
+        questtxt = random.nextInt(14);
         int side = random.nextInt(2);
         if(side == 0) {
             numLeft = questtxt;
@@ -241,7 +242,7 @@ public class Level3 extends AppCompatActivity {
                         //Exit level
                         dialogEnd.show();
                     } else {
-                        int questtxt = random.nextInt(14);
+                        questtxt = random.nextInt(14);
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = questtxt;
@@ -340,7 +341,7 @@ public class Level3 extends AppCompatActivity {
                         //Exit level
                         dialogEnd.show();
                     } else {
-                        int questtxt = random.nextInt(14);
+                        questtxt = random.nextInt(14);
                         int side = random.nextInt(2);
                         if(side == 0) {
                             numLeft = questtxt;
