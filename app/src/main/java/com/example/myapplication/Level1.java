@@ -58,6 +58,7 @@ public class Level1 extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setCancelable(false);
 
+
         TextView button_close = (TextView) dialog.findViewById(R.id.button_close);
         button_close.setOnClickListener(new View.OnClickListener() {
             @Override

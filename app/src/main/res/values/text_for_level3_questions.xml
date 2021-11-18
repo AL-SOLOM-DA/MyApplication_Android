@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="level3textquestion0">Найди где Медведь?</string>
+    <string name="level3textquestion1">Найди где Медведь?</string>
+    <string name="level3textquestion2">Найди где Медведь?</string>
+    <string name="level3textquestion3">Найди где Медведь?</string>
+    <string name="level3textquestion4">Найди где Медведь?</string>
+    <string name="level3textquestion5">Найди где Медведь?</string>
+    <string name="level3textquestion6">Найди где Медведь?</string>
+    <string name="level3textquestion7">Найди где Кошка?</string>
+    <string name="level3textquestion8">Найди где Лиса?</string>
+    <string name="level3textquestion9">Найди где Собака?</string>
+    <string name="level3textquestion10">Найди где Собака?</string>
+    <string name="level3textquestion11">Найди где Волк?</string>
+    <string name="level3textquestion12">Найди где Осел?</string>
+    <string name="level3textquestion13">Найди где Заяц?</string>
+</resources>

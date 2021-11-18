@@ -27,6 +27,8 @@ public class Array {
             R.string.level1text8,
             R.string.level1text9
     };
+    //first level array end
+    //second level array start
 
     final int[] images2 = {
             R.drawable.medved1,
@@ -60,5 +62,57 @@ public class Array {
             R.string.level2text12,
             R.string.level2text13,
     };
-    //first level array end
+    //second level array end
+    //third level array start
+
+    final int[] images3 = {
+            R.drawable.medved1,
+            R.drawable.medved2,
+            R.drawable.medved3,
+            R.drawable.medved4,
+            R.drawable.medved5,
+            R.drawable.medved6,
+            R.drawable.medved7,
+            R.drawable.cat,
+            R.drawable.lis,
+            R.drawable.dog1,
+            R.drawable.dog2,
+            R.drawable.volk,
+            R.drawable.osel,
+            R.drawable.zayac,
+    };
+    final int[] texts3 = {
+            R.string.level2text0,
+            R.string.level2text1,
+            R.string.level2text2,
+            R.string.level2text3,
+            R.string.level2text4,
+            R.string.level2text5,
+            R.string.level2text6,
+            R.string.level2text7,
+            R.string.level2text8,
+            R.string.level2text9,
+            R.string.level2text10,
+            R.string.level2text11,
+            R.string.level2text12,
+            R.string.level2text13,
+    };
+
+    final int[]textquest3 = {
+            R.string.level3textquestion0,
+            R.string.level3textquestion1,
+            R.string.level3textquestion2,
+            R.string.level3textquestion3,
+            R.string.level3textquestion4,
+            R.string.level3textquestion5,
+            R.string.level3textquestion6,
+            R.string.level3textquestion7,
+            R.string.level3textquestion8,
+            R.string.level3textquestion9,
+            R.string.level3textquestion10,
+            R.string.level3textquestion11,
+            R.string.level3textquestion12,
+            R.string.level3textquestion13,
+    };
+    //second level array end
 }

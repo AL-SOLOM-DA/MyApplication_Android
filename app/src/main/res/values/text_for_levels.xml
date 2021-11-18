@@ -25,4 +25,19 @@
     <string name="level2text11">Волк</string>
     <string name="level2text12">Осел</string>
     <string name="level2text13">Заяц</string>
+
+    <string name="level3text0">Медведь</string>
+    <string name="level3text1">Медведь</string>
+    <string name="level3text2">Медведь</string>
+    <string name="level3text3">Медведь</string>
+    <string name="level3text4">Медведь</string>
+    <string name="level3text5">Медведь</string>
+    <string name="level3text6">Медведь</string>
+    <string name="level3text7">Кошка</string>
+    <string name="level3text8">Лиса</string>
+    <string name="level3text9">Собака</string>
+    <string name="level3text10">Собака</string>
+    <string name="level3text11">Волк</string>
+    <string name="level3text12">Осел</string>
+    <string name="level3text13">Заяц</string>
 </resources>
